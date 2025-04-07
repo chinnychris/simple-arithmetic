@@ -55,11 +55,13 @@ function App() {
 
   return (
     <div className="App">
+      
       <div className={`big-number ${isAnimating ? "bounce" : ""}`}>
+        <p className="hero-icon">🔪</p>
         {formattedTotal}
       </div>
       {input &&
-        <div className="subtitle">$ {input}</div>
+        <div className="subtitle" style={{ color: input < 0 ? "pink" : "#e1e1e1" }}>$ {input}</div>
       }
     </div>
   );

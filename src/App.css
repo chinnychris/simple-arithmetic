@@ -1,3 +1,7 @@
+html, body {
+  overflow: hidden;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -5,16 +9,21 @@
   align-items: center;
   height: 100vh;
   font-family: Arial, sans-serif;
-  padding: 20px;
-  background-color: #f0f0f0;
+  background-color: #373741;
 }
 
 .big-number {
   font-size: 5rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  background-color: #fffefb;
   color: #333;
   transition: transform 0.5s ease;
+  border: 0px solid black;
+  border-radius: 2rem;
+  padding:4rem;
+  padding-bottom: 2rem;
+  padding-top: 0rem;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .bounce {
@@ -42,9 +51,22 @@
 .subtitle {
   font-size: 1.5rem;
   margin-top: 20px;
-  color: #555;
+  color: #ffffff;
   position: fixed;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.hero-icon {
+  justify-self: center;
+  padding: 0;
+  border-radius: 50%;
+  align-content: center;
+  height: 8rem;
+  width: 8rem;
+  background-color: #373741;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  font-size: clamp(2rem, 10vH, 4rem);
+  text-align: center;
 }
